@@ -1,0 +1,179 @@
+<!Doctype html>
+
+<html lang ="en">
+	<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8">
+			<meta name="description" content="This page gets the contact details(phone, mail and address) of the visitors for JackFish to contact them and also invites viewers to drop their requirements">
+		    
+			<meta name="keywords" content=" requirements, query form "> 
+			<!-- <meta name="format-detection" content="telephone=no"> --> <!--To check these options-->
+			
+			<!-- meta tag for mobile nos blackberry etc will also be placed here    
+			<meta http-equiv="x-rim-auto-match" content="none">   -->
+		
+		<title> Contact Info </title>
+		<!--[if IE]>
+			<script>
+			document.createElement("header");
+			document.createElement("footer");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("section");
+			</script>
+		<![endif -->
+		
+		<link rel ="stylesheet" href="Project.css" type="text/css" media="screen"> 
+		<link rel ="stylesheet" href="print.css" type="text/css" media="print"> 
+		
+	</head>
+	
+	<body>
+	<div id="wrapper">
+	
+		<header>
+		<a href="index.html" title="JackFish home"> <img src= "images/jackfishlogo.jpg" alt= "Jackfish logo" width="190" height="74"  > </a>
+			
+			<nav id="top">
+				<ul id="topnav">
+				
+					<li><a href="about.html" title="About JackFish Software">About </a>	
+						<ul>
+							<li> <a href="#"> Company Headquarters </a> </li>
+							<li> <a href="#"> Company Success  </a> </li>
+						</ul>
+					</li>	
+					<li><a href="Products.html" title="Products Offered"> Products </a>
+						<ul> 
+							<li> <a href="#">Jackfish Client Provisioner </a>  </li>
+							<li><a href="#"> Jackfish Client Upgrader  </a> </li>
+							<li><a href="#"> Jackfish Client Manager  </a> </li>
+							<li><a href="#"> Jackfish Sites  </a> </li>
+							<li><a href="#"> Jackfish Billing </a>  </li>
+							<li><a href="#"> Jackfish Grants </a>  </li>
+							<li><a href="#"> Jackfish Notice  </a> </li>
+							<li><a href="#"> Jackfish Caller ID </a>  </li>
+							<li><a href="#"> Jackfish Remote PVR </a> </li>
+						</ul>
+									
+					</li>
+					<li><a href="Partners.html" title="JackFish partners"> Partners </a></li>	
+				<!--	<a href="insights.html" title="JackFish insights and Principles">Insights </a>	-->
+					<li><a href="contact.html" title="JackFish headquarters">  Contact Us </a></li>
+					<li><a href="FAQ.html" title="JackFish FAQs">  FAQs </a></li>
+				</ul>
+			
+			</nav>
+			
+		
+		</header>
+	
+		<section>
+			<article>
+	<!--		
+				
+			<h2 id="Contact_form"> Contact Us! </h2>
+			<h3>Fill up the query form below and we will get back to you soon.</h3>
+			<div>
+			<form id="form1" name="Query form" action="mailto:info@jackfishllc.com"  method="post" >
+				<fieldset>
+					<legend>Personal Information</legend> 
+									
+						<table>
+							<tr class="odd">
+								<td><span class="required">*&nbsp;</span><label for="FirstName">First Name:</label></td>
+								<td><input type="text" name="FirstName" id="FirstName" required></td>
+							</tr>
+							
+							<tr>
+								<td><span class="required">*&nbsp;</span><label for="LastName">Last Name:</label></td>
+								<td><input type="text" name="LastName" id="LastName" required></td>
+							</tr>
+							
+							<tr class="odd">
+								<td><span class="required">*&nbsp;</span> <label for="Phone-no">
+								Phone no:</label></td>
+								<td><input type="text" name="Phone-no" id="Phone-no" size="12" maxlength="12" placeholder="(XXX)XXX-XXXX" required> </td>
+							
+							</tr>
+							<tr>
+								<td><span class="required">*&nbsp;</span><label for="Email">Email-id:</label></td>
+								<td><input type="text" name="Email" id="Email" required> </td>
+							
+							</tr>
+							<tr class="odd">
+								<td><label for="Company">Company:</label> </td>
+								<td><input type="text" name="Company" id="Company"> </td>
+							
+							</tr>
+							<tr>
+								<td><label for="Technology">Technology being used:</label></td>
+								<td><input type="text" name="Technology" id="Technology">  </td>
+							
+							</tr>
+							
+							<tr class="odd">
+								<td><label for="Query" > Requirements: </label></td>
+								<td><textarea name="Query" id="Query" cols="45" rows="5" >Kindly list your requirements: </textarea></td>
+							</tr>
+							<tr><td colspan="2">&nbsp;&nbsp;</td></tr>
+						    <tr>
+								<td colspan="2" style="text-align: center"><input type="submit" style="width: 50px;padding: 3px;"  value="Submit">
+								<input type="reset" value="Reset" style="margin-left: 5px;width: 50px;padding:3px"></td>
+							</tr>
+						</table>
+				</fieldset>	
+			</form> 
+		</div>
+	-->
+	
+	<form class="contact_form" action="#" method="post" name="contact_form">
+		<fieldset>
+			<legend>Contact Details</legend>
+				<ul>
+					<li> 
+						<span class="required_notification"> * Denotes Required Field</span>
+					</li>
+					<li>
+						<label for="name">Name:</label>
+						<input type="text" id="name" placeholder="John Doe" required/>
+					</li>
+					<li>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" placeholder="john_doe@example.com" required />
+						<span class="form_hint">Proper format "name@something.com"</span>
+					</li>
+					<li>
+						<label for="website">Website:</label>
+						<input type="url" id="website" name="website" placeholder="http://johndoe.com" required 	pattern="(http|https)://.+"/>
+						<span class="form_hint">Proper format "http://someaddress.com"</span>
+					</li>
+					<li>
+						<label for="message">Message:</label>
+						<textarea id="message" name="message" cols="40" rows="6" required ></textarea>
+					</li>
+				</ul>
+			</fieldset>
+			
+			<fieldset class="submit">
+					<button class="submit" type="submit">Submit Form</button>
+			</fieldset>
+				
+			</form>
+							
+				
+			</article>
+		
+		
+		</section>
+	
+		<footer>
+			Copyright &copy; 2014 JackFish Software. All rights reserved.
+		</footer>
+		
+	
+	</div> <!-- end wrapper -->
+
+	
+	</body>
+	
+</html>

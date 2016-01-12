@@ -1,0 +1,698 @@
+body{
+background-color:#7ec0ee;
+font:.9em/1.5em Verdana;
+color:#000;
+margin:0;
+padding:0px;
+}
+
+/* wrapper styling  */
+#wrapper{
+width:80%;
+min-height:800px;
+margin:auto;
+margin-bottom: 20px;
+background:#fff;
+}
+/* ------------------------  header related styling   --------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+
+header img{
+margin-left:0;		/*JackFish logo which is also hori. navigation link----*/
+margin-top:0;
+}
+
+/* my previous navigation settings....*/
+/*
+header nav {
+float:right;
+font-size: 1.2em;
+padding: 10px 0;
+margin-top:0px ;
+margin-right:3px;
+margin-bottom:0px;
+background-color:#7ec0ee;
+z-index:500;
+}
+header nav a {				
+border-right: 1px solid #669966;
+padding:10px 20px;
+text-decoration:none;
+color:black;
+}
+#currentpage{            
+color: #fff;
+background: #2f4f4f;
+} */
+/* immediate Above code changes the color of currently selected page at top horizontal nav menu*/
+
+/* ------------------------   side vertical navigation  related styling   --------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+
+
+nav ul  {
+float:left;
+font-size: 0.9em;
+line-height:3em;
+padding:40px 0 0 0px;
+margin-right:1px;
+}
+
+nav ul li{
+margin: 0px 1px;
+border-bottom: 1px solid #669966;
+list-style:none;
+}
+
+nav ul li a {
+text-decoration:none;
+color:black;
+display: block;
+}
+
+#sidenav{
+	margin-left:10px;
+}
+
+/*------------------------------ Sidebar related styling   ----------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+#sidebar{
+float:right;
+margin-right:10px;
+margin-top:30px;
+}
+
+#sidebar a{
+display:block;		/* for index page */
+margin-right:1px;
+font-size: .8em;
+margin-top:2px;
+margin-bottom:0px;
+}
+
+
+#sidebar h3{			/* for products page---*/
+text-align:center;
+font-size: 1em;
+}
+
+a[href$=".pdf"]{  	/*  atribute selector on sidebar*/
+padding: 5px 18px 0 0;
+background: url(images/pdficon_small.gif) no-repeat center right  ;
+}
+
+
+/*----------------------  section related styling------------*/
+/*------------------------------------------------------------------------------------------*/
+
+section{
+padding-bottom:20px;
+padding-right:50px;
+}
+
+
+/*----------------------  article related styling------------*/
+/*------------------------------------------------------------------------------------------*/
+article{
+display:block;
+text-align:justify;
+margin-left:200px;
+}
+
+article p  a img{
+border:1px solid gray; /*-----word wrap around para on partners page---*/
+float:right;
+}
+
+article img{
+margin-top:75px;
+margin-bottom:70px;		/*---- stand alone image without any word wrap on index page---*/
+margin-left:150px;
+}
+
+article p img{
+margin-top:5px;
+margin-bottom:10px;		/*---- stand alone image without any word wrap on index page---*/
+margin-left:20px;
+}
+
+article h1, h1{
+margin-top:20px;
+margin-bottom:20px;
+text-align:center;
+}
+
+article h2,h2{
+text-align:center;
+}
+
+article h3,h3{
+text-align:center;
+}
+
+#FAQSettings article {
+margin-left: 40px;	/*--- On FAQ page, more space should be covered so no extra margin----*/
+margin-right: 40px;
+}
+
+.nomargin{
+margin-right:100px;	/*---- This is only for index page as there is no side navigation---*/
+text-align:justify;
+margin-left:100px;
+}
+
+
+/* ------------------------  footer related styling   --------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+footer{
+border-top:1px solid gray;
+font:0.8em Arial, Verdana, san-serif;
+margin-bottom:20px;
+padding-bottom:5px;
+padding-top:5px;
+padding-left:5px;
+}
+
+/* ------------------------  iframe related styling   --------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+iframe{
+padding-top:30px;
+border:0;
+}
+
+/* ------------------------  form related styling for contacts page  --------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+/*
+form td, form tr{
+padding-top:5px;
+padding-bottom:5px;
+font-weight:bold;
+text-align:left;
+}
+fieldset{width: 70%;
+font-weight: bold;
+text-align: center;
+}
+.required {color: red; /* mandatory inputs in contact form---
+}*/
+
+
+
+/* table related settings -----*/
+/*------------------------------------------------------------------------------------------*/
+
+/*  for table on products page(product release article and FAQ page)---*/
+table.withBorder{
+width: 90%;
+margin:auto;
+border-collapse: collapse;
+}
+
+table.withBorder td{ 
+padding: 2px;
+text-align:left;
+border: 1px solid black;
+}
+
+table.withBorder th {
+border: 1px solid black;
+text-align: center;
+}
+/*---------------only for product page-------------------------*/
+tfoot td{
+font-size:.7em;
+color:#000;
+font-style:italic;
+text-align:right;
+background:#ffe4e1;
+padding:1.2em;
+
+}
+.Productgroup{
+background: #7fffd4;
+}
+table.withBorder caption{
+font-size:1.2em;
+font-weight:bold;
+color: #f00;
+font-variant:small-caps;
+letter-spacing:.2em;
+margin:.5em 0; 
+caption-side:top;
+}
+
+table.withBorder tr:hover{
+background:#696;
+}
+
+/*----- for tables on product page and contacts page----*/
+.odd {
+background-color:#b0e0e6; 
+}
+
+
+#aligncenter{ 	/*----for aligning iframe in the center of row on about page.-----*/
+text-align:center;
+}
+
+/* Pseudo class styling for links------*/
+/*---------------------------------------------------------------*/
+
+a:hover {
+background: #2f4f4f;
+color: #fff;
+}
+
+a:active {
+background: black;
+color: #fff;
+text-decoration:none;
+}
+
+/* 1. Applying Descendent Selectors  */
+
+article > h2{
+color: blue;
+
+}
+article > h3{
+color: red;
+}
+/* 1. Applying adjacent sibling Selectors  */
+article h3 + p{
+	color : purple;
+}
+
+
+
+/* 1. Applying general or following sibling Selectors  */
+/*article  p ~ p{ /* Just for index page two p under one article  
+	color : brown;
+}*/
+
+/* Grandchild selector  */
+
+article   * li{
+	color: blue;
+}
+
+li * li{
+	color:brown;
+}
+
+/* 2.Image Replacement   */
+
+#Contact_form{
+width:200px;
+height:119px;
+margin:0 0 20px 30px;
+padding:0;
+background:url(images/Contact.jpg) no-repeat center;
+text-indent:-9999px;*/
+}
+/* Gallery  */
+
+#gallery ul {
+position:relative;
+list-style-type:none;
+width:500px;
+margin:0 auto;
+padding:0;
+min-height: 300px;
+}
+
+#gallery  li {
+float:left;
+width:151px;
+padding-bottom:1em;
+border-right:1px solid #333;
+border-bottom:1px solid #333;
+}
+
+#gallery #img_1 {
+background:url(images/Hawai.jpg) no-repeat 50% 10px;
+}
+#gallery #img_2 {
+background:url(images/Cimtel.jpg) no-repeat 50% 10px;
+}
+#gallery #img_3 {
+background:url(images/Tbay.png) no-repeat 50% 10px;
+border-right:0 solid #333;
+}
+
+#gallery #img_4 {
+background:url(images/Surewest.jpg) no-repeat 50% 10px;
+border-bottom:0 solid #333;
+}
+#gallery  #img_5 {
+background:url(images/MBOI.jpg) no-repeat 50% 10px;
+border-bottom:0 solid #333;
+}
+#gallery  #img_6 {
+background:url(images/WestCarolina.jpg) no-repeat 50% 10px;
+border-bottom:0 solid #333;
+border-right:0 solid #333;
+}
+
+#img_1 a, #img_2 a, #img_3 a {
+padding-top:100px; /* a bit larger then the height of image */
+}
+#img_4 a, #img_5 a, #img_6 a {
+padding-top:100px;
+}
+#gallery li a {
+display:block; /* to make the entire area a hot spot */
+text-align:center;
+}
+
+#gallery a:link, #gallery a:visited {
+text-decoration:none;
+color:#600;
+font-weight:bold;
+}
+
+
+/* Animation */
+
+.image {
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 50% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 50% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 50% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+
+
+/* Demonstrating  Drop-Down menu  top navigation*/
+#top{
+	float:right;
+	width:400px;
+}
+
+#topnav{
+	list-style:none;
+	font-weight:bold;
+	margin-bottom: 10px;
+	float:left;
+	width:100%;
+	padding:0;
+}
+
+#topnav li{
+	float:left;
+	margin-right: 1px;
+	position:relative;
+	padding:0;
+}
+
+#topnav a{
+	display:block;
+	padding:5px 10px;
+	color:#fff;
+	background: navy;
+	text-decoration:none;
+}
+
+#topnav a:hover{
+	color:#fff;
+	background: #6b0c36;
+	text-decoration: underline;
+
+}
+
+
+/* dropdown */
+
+#topnav ul{
+	list-style:none;
+	background: #fff;
+	position:absolute;
+	left: -9999px;
+	padding:0;
+	}
+	
+	
+#topnav ul li{
+		padding-top:1px;
+		float: none;
+	}
+	
+#topnav ul a{
+	white-space: nowrap;
+}	
+
+#topnav li:hover ul{  /* Display drop down */
+	left: 0;  /* brings back on screen */
+}
+
+#topnav li:hover a{
+	background: #6b0c36;
+	text-decoration: underline;
+	} 
+
+#topnav li:hover ul a{
+	text-decoration:none;
+}
+#topnav li:hover ul li:hover a{
+	background: #eee;
+}
+
+
+
+/*  Structural pseudo-classes  */
+
+#breakbefore th{
+background: silver;
+}
+#breakbefore tr:nth-of-type(odd){ /*odd rows*/
+background: lightyellow;
+}
+#breakbefore tr:nth-of-type(even){ /*even rows*/
+background: lightblue;
+}
+#breakbefore tr>td:first-of-type{ /*first cell of each row*/
+font-weight: bold;
+}
+
+
+
+/* ---------------- styling form -------------    */	
+
+
+:-moz-placeholder { color: blue; }
+::-webkit-input-placeholder { color: blue; }
+
+/* Remove input autofocus webkit */
+*:focus {outline: none;}
+
+.contact_form ul {
+	width:750px;
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+.contact_form li{
+	padding:12px;
+	border-bottom:1px solid #eee;
+	position:relative;
+}
+
+/*border below header n footer of form */
+/*
+.contact_form li:first-child, .contact_form li:last-child {
+	border-bottom:1px
+	solid
+	#777;
+}
+*/
+
+/* top line of the form */
+/*
+.contact_form h2
+{
+	margin:0;
+	display: inline;
+}*/
+
+.required_notification {
+	color:#d45252;
+	margin:5px 0 0 0;
+	display:inline;
+	float:right;
+}
+
+/*  labels and inputs  and text-area*/
+
+.contact_form label {
+width:150px;
+margin-top: 3px;
+display:inline-block;
+float:left;
+padding:3px;
+}
+.contact_form input {
+height:20px;
+width:220px;
+padding:5px
+8px;
+}
+
+.contact_form textarea {
+padding:8px; width:300px;
+}
+.contact_form button {
+margin-left:156px;
+}
+
+
+
+.contact_form input, .contact_form textarea {
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+background: #fff;
+border:1px solid #555;
+box-shadow: 0 0 3px #aaa;
+}
+
+/* Button Style */
+button.submit {
+	background-color: #68b12f;
+	background: -webkit-gradient(linear, left
+	top, left
+	bottom, from(#68b12f),
+	to(#50911e));
+	background: -webkit-linear-gradient(top, #68b12f, #50911e);
+	background: -moz-linear-gradient(top, #68b12f, #50911e);
+	background: -ms-linear-gradient(top, #68b12f, #50911e);
+	background: -o-linear-gradient(top, #68b12f, #50911e);
+	background: linear-gradient(top, #68b12f, #50911e);
+	border: 1px
+	solid
+	#509111;
+	border-bottom: 1px
+	solid
+	#5b992b;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0 #9fd574;
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer;
+}
+
+button.submit:active {
+	border: 1px solid #20911e;
+	box-shadow: 0 0 10px 5px #356b0b inset;
+	-webkit-box-shadow:0 0 10px 5px #356b0b inset;
+	-moz-box-shadow: 0 0 10px 5px #356b0b inset;
+	-ms-box-shadow: 0 0 10px 5px #356b0b inset;
+	-o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+/* elongating the input length */
+.contact_form input:focus, .contact_form textarea:focus {
+	padding-right:70px;
+}
+
+/* Adding asterisk to the required fields  */
+
+input:required, textarea:required {
+	background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+}
+
+/* styling invalid inputs */
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff url(images/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535;
+}
+/* styling valid inputs */
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff url(images/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+
+/*  Hints for the formay in which to enter  */
+
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-left:8px;
+	padding: 1px 6px;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	display: none;
+}
+
+.form_hint::before {
+	content: "\25C0"; /* left point triangle in escaped unicode */
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+
+.contact_form input:focus + .form_hint {display: inline;}
+
+/* change form hint color when valid */
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+
+/* change form hint arrow color when valid */
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+
+
+fieldset {
+/* margin gives space btwn fieldsets */
+margin:1.5em 0 0 0; /* padding set to 0 to deal with latter issues with floating and width */
+padding:0;
+}
+legend {
+/* replace space removed from fldst */
+margin-left:1em;
+color:#000;
+font-weight:bold;
+}
+fieldset ul {
+/* replace pdg space removed from fldst */
+padding:1em 1em 0 1em;
+list-style:none;
+}
+
+fieldset li {
+padding-bottom: 1em;
+}
+
+fieldset.submit {
+border-style:none;
+}

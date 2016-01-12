@@ -1,0 +1,198 @@
+<!Doctype html>
+
+<html lang ="en">
+	<head>
+			<meta http-equiv="content-type" content="text/html; charset=utf-8">
+			<meta name="description" content="This page is about FAQs about Jackfish Software products." >
+		    
+			<meta name="keywords" content=" Jackfish Mediaroom, IPTV"> 
+			<!-- meta tag for mobile nos blackberry etc will also be placed here    -->
+		
+		
+		<title> Frequently Asked Questions </title>
+		<!--[if IE]>
+			<script>
+			document.createElement("header");
+			document.createElement("footer");
+			document.createElement("nav");
+			document.createElement("article");
+			document.createElement("section");
+			</script>
+		<![endif]-->
+		<link rel ="stylesheet" href="Project.css" type="text/css" media="screen"> 
+		<link rel ="stylesheet" href="print.css" type="text/css" media="print"> 
+	</head>
+	
+	<body>
+	<div id="wrapper">
+	
+		<header>
+		<a href="index.html" title="JackFish home"> <img src= "images/jackfishlogo.jpg" alt= "Jackfish logo" width="190" height="74"  > </a>
+			
+			<nav id="top">
+				<ul id="topnav">
+				
+					<li><a href="about.html" title="About JackFish Software">About </a>	
+						<ul>
+							<li> <a href="#"> Company Headquarters </a> </li>
+							<li> <a href="#"> Company Success  </a> </li>
+						</ul>
+					</li>	
+					<li><a href="Products.html" title="Products Offered"> Products </a>
+						<ul> 
+							<li> <a href="#">Jackfish Client Provisioner </a>  </li>
+							<li><a href="#"> Jackfish Client Upgrader  </a> </li>
+							<li><a href="#"> Jackfish Client Manager  </a> </li>
+							<li><a href="#"> Jackfish Sites  </a> </li>
+							<li><a href="#"> Jackfish Billing </a>  </li>
+							<li><a href="#"> Jackfish Grants </a>  </li>
+							<li><a href="#"> Jackfish Notice  </a> </li>
+							<li><a href="#"> Jackfish Caller ID </a>  </li>
+							<li><a href="#"> Jackfish Remote PVR </a> </li>
+						</ul>
+									
+					</li>
+					<li><a href="Partners.html" title="JackFish partners"> Partners </a></li>	
+				<!--	<a href="insights.html" title="JackFish insights and Principles">Insights </a>	-->
+					<li><a href="contact.html" title="JackFish headquarters">  Contact Us </a></li>
+					<li><a href="FAQ.html" title="JackFish FAQs">  FAQs </a></li>
+				</ul>
+			
+			</nav>
+			
+		
+		</header>
+
+				
+			
+		
+		<section id="FAQSettings">
+			<article id="questions" >
+			<h2 > Frequently Asked Questions</h2>
+			
+				<ul > 
+					<li> <a href="#Q1">What version of Mediaroom does JackFish support?   </a></li>
+					<li> <a href="#Q2">What is Hardware specification requirement?  </a></li>
+					<li> <a href="#Q3">Does JackFish maintains a separate copy of Mediaroom Data?    </a></li>
+					<li> <a href="#Q4">Does JackFish Support extracting and archiving Billing Records?  </a></li>
+					<li> <a href="#Q5">What types of reports are supported by JackFish Plant?   </a></li>
+					<li> <a href="#Q6">How does JackFish supports subscriber privacy?   </a></li>
+					<li> <a href="#Q7">What security model JackFish provide?</a></li>
+				</ul>
+				
+			</article>
+			
+			<br><br>
+			<article id="Answers">
+				
+				<h3 id="Q1">What version of Mediaroom does JackFish support?</h3>
+				  	<p>JackFish plant has been tested with Mediaroom 1.1 and 2.0. It removed call to all depreciated API's as listed by Microsoft API documentation 2.0. JackFish Billing Adapter used Mediaroom 2.0
+					DataWare House API's to pull Billing information. If JackFish Billing adapter detects unavailability of DataWare House, it used Reporting Store API to pull Billing Records.</p>
+
+				<h3 id="Q2">What is Hardware specification requirement?</h3>
+					<p>JackFish Plant have been tested on Windows Server 2008 R2 / 2012. BOM of JackFish suit required
+					2 Load Balanced machines for Framework
+					2 Load Balanced Machines for Database
+					2 Load Balanced Machines to host UI Application.</p>
+					
+				<h3 id="Q3">Does JackFish maintain separate copy of Mediaroom Data?</h3>
+					<p>JackFish do maintain a separate copy of database which is in sync with Mediaroom using scheduled jobs. 
+					It keeps the local copy of accounts/devices/groups/services/service collections(PPV/LIVE/VOD/RDP)/packages/grants/EPG Data. 
+					It keeps all the information about subscribers there packages, EPG data with call letters, Channel Maps. 
+					All these data are exposed through services which can be consumed by operators.</p>
+					
+				<h3 id="Q4">Does JackFish Support extracting and archiving Billing Records?  </h3>
+					<p>Billing Module does currently support importing billing record, reconciling with PPV and VOD assets to pull the title and rating. 
+					Once the records are processed (exported in appropriate format) it marks the status as readable. 
+					Billing module support Archive using Billing Achieve job which archive the old record (age defined by configuration) 
+					and mark the status of records to Delete in Mediaroom after successfully archiving the records.  
+					It creates achieve MDF files which can be restored any time in future if any requirement to view the archived Billing records is provided.</p>
+					
+				<h3 id="Q5">What types of reports are supported by JackFish Plant?</h3>
+					<p>JackFish provide following report out of box. JackFish supports any custom reports requirements.</p>
+					<ul>
+						<li>User Report - general user information, related vendor and group details as well as status and security details.</li>
+						<li>Subscriber Class Report - displays the subscribers associated to each subscriber class and related subscriber details</li>
+						<li>Credit Limit Reset - provides information about the batch credit limit updates processing.  
+							It provides information on the credit limit reset updates by VHO and by date for the updates that were not successful</li>
+						<li>Audit Event - provides an overall resource usage information, including measure of activity (successes and failures) within the SDP for each user (id) after a login. 
+							An audit trail generates important data related to user and system activities during normal system operation for a given time period.</li>
+						<li>Live Channel Subscription - displays the number of active Live Channel subscriptions held by subscribers, on a particular date. 
+						The listing displays active subscription count per live channel on a per day basis</li>
+						<li>VoD/PPV Purchase Settlement - displays the number of daily purchases of assets (VoDs and PPVs) by subscribers on a particular date. 
+							The listing displays the purchase counts by date and by price</li>	
+					</ul>	
+				<h3 id="Q6">How does JackFish supports subscriber privacy? </h3>
+					<p>All JackFish products use machine key to encrypt the sensitive data i.e. service credential for web services. 
+					These machine keys are generated specific for machine and hence the data can’t be unencrypted in any other machine. 
+					User name password are not stored. They are stored as hash and hence they can’t be read by any other third party. 
+					In future if any other sensitive data is stored, it will be encrypted with this machine key.</p>
+				<h3 id="Q7">What security model JackFish provide??</h3>
+					<p>JackFish support role based security for all operations exposed as Service. Below are the role and current function that they are authorized to access.</p>
+					
+					<table id="breakbefore" class="withBorder">
+						<tr>
+							<th>Role Name	   </th>
+							<th>Role Description   </th>
+						</tr>
+						
+						<tr>
+							<td>Subscriber	   </td>
+							<td> Can perform end-user actions  </td>
+						</tr>
+						
+						<tr>
+							<td>ContentProvider	  </td>
+							<td> Can audit content (live, VOD, PPV, application) usage   </td>
+						</tr>
+						
+						<tr>
+							<td>Installer </td>
+							<td> Can install devices and associate with accounts  </td>
+						</tr>
+						
+						<tr>
+							<td> CSR  </td>
+							<td> Can modify carrier-specific principals and perform device-level actions  </td>
+						</tr>
+						
+						<tr>
+							<td>Operator   </td>
+							<td>Can modify carrier-specific principals and channel maps    </td>
+						</tr>
+						
+						<tr>
+							<td>CarrierManager </td>
+							<td>Can modify all carriers, principals, and channel maps   </td>
+						</tr>
+						
+						<tr>
+							<td> Administrator  </td>
+							<td> Can manage every aspect of the system, including configure the JackFish Framework and modules  </td>
+						</tr>
+					
+					
+					</table>
+					
+					
+					
+					
+					
+					<br>
+					<a href= "#top">Return to Top</a>
+ 
+			</article>		
+		
+		</section>
+		
+		<footer>
+			Copyright &copy; 2014 JackFish Software. All rights reserved.
+		</footer>
+	
+	
+	</div>		<!--end wrapper-->
+
+
+	</body>
+	
+</html>
